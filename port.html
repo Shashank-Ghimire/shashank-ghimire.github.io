@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InFamous, A learner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        img {
+            width: 110%;
+            margin: 30px 0;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(33, 15, 50);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            background-color: rgb(61, 16, 104);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: flex;
+            list-style: none;
+            margin: 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: antiquewhite;
+            transition: color .35s ease-in-out, .35s ease-in-out;
+
+        }
+
+        nav ul li a:hover {
+            color: #54b3d6;
+            font-size: 1.09rem;
+        }
+
+        .left {
+            font-size: x-large;
+            color: antiquewhite;
+            transition: color .35s ease-in-out, .35s ease-in-out;
+        }
+
+        .left:hover {
+            cursor: pointer;
+            font-size: xx-large;
+            color: #54b3d6;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0px;
+            align-items: center;
+
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+            width: 40%;
+            font-size: 2.5rem;
+            margin: 30px;
+            height: 65vh;
+        }
+
+        .rightsection {
+            width: 60%;
+            height: 65vh;
+        }
+
+        .sectionsecond {
+            height: 30vh;
+           width: 85%;
+           margin: auto;
+        }
+
+        .sectionsecond h1 {
+            max-width: 80vw;
+            font-size: xx-large;
+            font-weight: bold;
+            transition: color .5s ease-in-out, .5s ease-in-out;
+            color: #54b3d6;
+        }
+
+        .sectionsecond h1:hover {
+            color: rgb(203, 105, 203);
+            cursor: pointer;
+            font-size: 2.22rem;
+        }
+
+        .sectionsecond p {
+
+            font-size: larger;
+        }
+
+        .sectionsecond span {
+            color: grey;
+            
+            font-size: 0.8rem;
+        }
+
+        .purple {
+            color: rgb(203, 105, 203);
+            color: #54b3d6;
+            transition: color .5s ease-in-out, .5s ease-in-out;
+        }
+
+        .purple:hover {
+            color: rgb(203, 105, 203);
+            cursor: pointer;
+            font-size: 2.8rem;
+
+
+        }
+
+        #element {
+            color: #54b3d6;
+            transition: color .5s ease-in-out, .5s ease-in-out;
+        }
+
+        #element:hover {
+            cursor: pointer;
+            color: rgb(203, 105, 203);
+
+        }
+
+
+
+        main hr {
+            border: 0px;
+            background: #54b3d6;
+            height: 1.3px;
+            margin: 8px 87px;
+            transition: color .5s ease-in-out, .5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">InFamous's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About me</a></li>
+                    <li><a href="/">My works</a></li>
+                    <li><a href="/">CV</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, I'm <span class="purple">InFamous</span>. I am a student, <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="op.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="sectionsecond">
+            <span>How did I come up with this name.</span>
+            <h1>Why InFamous?</h1>
+            <p>Yes, InFamous is not my real name. I dont really remember how I got this name but I use it when I play
+                video games and I like it a lot. That's how I got this name. By the way, my actual name is Shashank
+                Ghimire.</p>
+
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer,', 'Digital Marketer,', 'Writer', 'and', 'A computer enthusiast.'],
+            typeSpeed: 85,
+        });
+    </script>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
